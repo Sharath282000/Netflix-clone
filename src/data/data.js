@@ -1,0 +1,217 @@
+import requests from '../api/request';
+
+const data = [
+    {
+        "id": 1,
+        "title": "Netflix Originals",
+        "fetchUrl": requests.fetchOriginals,
+        "issmall": true,
+    },
+    {
+        "id": 2,
+        "title": "Trending Now",
+        "fetchUrl": requests.fetchTrending,
+        "issmall": false,
+    },
+    {
+        "id": 3,
+        "title": "Top Rated Shows",
+        "fetchUrl": requests.fetchTopRatedtvshow,
+        "issmall": false,
+    },
+    {
+        "id": 4,
+        "title": "Top Rated Movies",
+        "fetchUrl": requests.fetchTopRated,
+        "issmall": true,
+    },
+    {
+        "id": 5,
+        "title": "Popular Movies",
+        "fetchUrl": requests.fetchPopularmovies,
+        "issmall": true,
+    },
+    {
+        "id": 6,
+        "title": "Upcoming Movies",
+        "fetchUrl": requests.fetchUpcomingmovies,
+        "issmall": true,
+    },
+    {
+        "id": 7,
+        "title": "Action Movies",
+        "fetchUrl": requests.fetchActionMovies,
+        "issmall": true,
+    },
+    {
+        "id": 8,
+        "title": "Comedy Movies",
+        "fetchUrl": requests.fetchComedyMovies,
+        "issmall": true,
+    },
+    {
+        "id": 9,
+        "title": "Family Genre Movies",
+        "fetchUrl": requests.fetchFamilyMovies,
+        "issmall": true,
+    },
+    {
+        "id": 10,
+        "title": "Drama Movies",
+        "fetchUrl": requests.fetchDramaMovies,
+        "issmall": true,
+    },
+    {
+        "id": 11,
+        "title": "Crime Movies",
+        "fetchUrl": requests.fetchCrimeMovies,
+        "issmall": true,
+    },
+    {
+        "id": 12,
+        "title": "Thriller Movies",
+        "fetchUrl": requests.fetchThrillermovies,
+        "issmall": true,
+    },
+    {
+        "id": 13,
+        "title": "Mystery Movies",
+        "fetchUrl": requests.fetchMysteryMovies,
+        "issmall": true,
+    },
+    {
+        "id": 14,
+        "title": "Horror Movies",
+        "fetchUrl": requests.fetchHorrorMovies,
+        "issmall": true,
+    },
+    {
+        "id": 15,
+        "title": "Animation Movies",
+        "fetchUrl": requests.fetchAnimationMovies,
+        "issmall": true,
+    },
+    {
+        "id": 16,
+        "title": "Fantasy Movies",
+        "fetchUrl": requests.fetchFantasyMovies,
+        "issmall": true,
+    },
+    {
+        "id": 17,
+        "title": "Sci-fi Movies",
+        "fetchUrl": requests.fetchScifimovies,
+        "issmall": true,
+    },
+    {
+        "id": 18,
+        "title": "Romantic Movies",
+        "fetchUrl": requests.fetchRomanceMovies,
+        "issmall": true,
+    },
+    {
+        "id": 19,
+        "title": "Western Movies",
+        "fetchUrl": requests.fetchWesternMovies,
+        "issmall": true,
+    },
+    {
+        "id": 20,
+        "title": "War Movies",
+        "fetchUrl": requests.fetchWarmovies,
+        "issmall": true,
+    },
+    {
+        "id": 21,
+        "title": "Period Movies",
+        "fetchUrl": requests.fetchHistorymovies,
+        "issmall": true,
+    },
+    {
+        "id": 22,
+        "title": "Documentary Movies",
+        "fetchUrl": requests.fetchDocumantaries,
+        "issmall": true,
+    },
+    {
+        "id": 23,
+        "title": "Popular Shows",
+        "fetchUrl": requests.fetchPopularseries,
+        "issmall": false,
+    },
+    {
+        "id": 24,
+        "title": "Action & Adventure Shows",
+        "fetchUrl": requests.fetchActionshows,
+        "issmall": false,
+    },
+    {
+        "id": 25,
+        "title": "Comedy Shows",
+        "fetchUrl": requests.fetchComedyshows,
+        "issmall": false,
+    },
+    {
+        "id": 26,
+        "title": "Animation Shows",
+        "fetchUrl": requests.fetchAnimationshows,
+        "issmall": false,
+    },
+    {
+        "id": 27,
+        "title": "Family Genre Shows",
+        "fetchUrl": requests.fetchFamilyShows,
+        "issmall": false,
+    },
+    {
+        "id": 28,
+        "title": "Drama Shows",
+        "fetchUrl": requests.fetchDramaShows,
+        "issmall": false,
+    },
+    {
+        "id": 29,
+        "title": "Crime & Thriller Shows",
+        "fetchUrl": requests.fetchCrimeShows,
+        "issmall": false,
+    },
+    {
+        "id": 30,
+        "title": "Sci-fi Shows",
+        "fetchUrl": requests.fetchScifishows,
+        "issmall": false,
+    },
+    {
+        "id": 31,
+        "title": "War and Politics Shows",
+        "fetchUrl": requests.fetchWarpoliticsshows,
+        "issmall": false,
+    },
+    {
+        "id": 32,
+        "title": "Documentary Shows",
+        "fetchUrl": requests.fetchDocumantaryshows,
+        "issmall": false,
+    },
+    {
+        "id": 33,
+        "title": "Western Shows",
+        "fetchUrl": requests.fetchWesternshows,
+        "issmall": false,
+    },
+    {
+        "id": 34,
+        "title": "Soap Genre Shows",
+        "fetchUrl": requests.fetchSoapShows,
+        "issmall": false,
+    },
+    {
+        "id": 35,
+        "title": "Reality Shows",
+        "fetchUrl": requests.fetchRealityShows,
+        "issmall": false,
+    },
+
+]
+
+export default data;

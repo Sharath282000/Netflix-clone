@@ -1,0 +1,162 @@
+.App {
+  background-color: #111;
+  color: white;
+}
+
+.container {
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.row h2 {
+  padding: 0 10px;
+}
+
+.row img {
+  border-radius: 7px;
+}
+
+.row-posters {
+  display: flex;
+  overflow-y: hidden;
+  padding: 20px 10px;
+  overflow-x: scroll;
+}
+
+.rows_posters {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  padding: 20px 10px;
+}
+
+.rows_posters .row_poster {
+  margin-bottom: 10px;
+}
+
+.row-posters::-webkit-scrollbar {
+  display: none;
+}
+
+.row_poster {
+  object-fit: contain;
+  max-height: 250px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: 450ms all;
+}
+
+.row_poster_small {
+  object-fit: contain;
+  max-height: 250px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: 450ms all;
+}
+
+.row_poster:hover {
+  transform: scale(1.08);
+}
+
+.row_poster_small:hover {
+  transform: scale(1.08);
+}
+
+.row_posterlarge {
+  max-height: 110px;
+  cursor: pointer;
+  transition: 450ms all;
+  margin-right: 14px;
+}
+
+.row_posterlarge:hover {
+  transform: scale(1.09);
+}
+
+.loader {
+  border-radius: 7px;
+  background-color: #282d2e;
+  margin-right: 11px;
+  width: 100%;
+  height: 100%;
+  padding: 43px 67px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  background-size: 200% 100%;
+  background: linear-gradient(110deg, grey 8%,
+      black 18%,
+      var(whitesmoke) 33%);
+  animation: 1.5s shine linear infinite;
+}
+
+@keyframes shine {
+  to {
+    background-position-x: -200%;
+  }
+}
+
+.loader.small {
+  width: 150px;
+  height: 220px;
+  object-fit: contain;
+}
+
+.loader.search {
+  margin-bottom: 10px;
+  width: 150px;
+  height: 220px;
+  object-fit: contain;
+}
+
+.loader span {
+  width: 100%;
+  height: 100%;
+  padding: 20px 30px;
+}
+
+@media (max-width:900px) {
+  .row h2 {
+    font-size: 16px;
+  }
+
+  .row_poster {
+    max-height: 160px;
+  }
+
+  .row_posterlarge {
+    max-height: 80px;
+  }
+
+  .loader {
+    padding: 30px 40px;
+  }
+
+  .loader.small {
+    width: 110px;
+    height: 150px;
+    object-fit: contain;
+  }
+
+  .loader.search {
+    width: 110px;
+    height: 150px;
+    object-fit: contain;
+  }
+}
+
+@media (max-width:400px) {
+  .rows_posters .row_poster{
+    max-height: 100px;
+  }
+  .loader.search{
+    width: 80px;
+    height: 100px;
+  }
+}
+
+@media(max-width:280px) {
+  .app {
+    width: 100%;
+    height: 100%;
+  }
+}
